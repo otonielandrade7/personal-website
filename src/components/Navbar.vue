@@ -1,7 +1,7 @@
 <template>
   <header id="navbar" class="navbar">
     <div class="navbar-logo-container">
-      <img src="@/assets/logo.webp" class="navbar-logo-img" alt="" />
+      <img loading="lazy" src="@/assets/logo.png" class="navbar-logo-img" alt="Logo de Otoniel Andrade" />
     </div>
     <nav class="navbar-nav">
       <ul class="navbar-list">

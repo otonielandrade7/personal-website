@@ -3,6 +3,7 @@
     <div class="presentation-container">
       <div class="presentation-photo-container">
         <img
+          loading="lazy"
           class="presentation-photo"
           src="@/assets/profile-oto.jpg"
           alt="Fotografía de Otoniel Andrade"
@@ -12,8 +13,8 @@
         <h1 class="gretting">Hola, soy Otoniel Andrade 👋</h1>
         <h2 class="gretting-tagline">Frontend web developer</h2>
         <p>
-          Soy un desarrollador web frontend salvadoreño dedicado, con amor por la
-          tecnología y el aprendizaje continuo. 👨‍💻
+          Soy un desarrollador web frontend salvadoreño dedicado, con amor por
+          la tecnología y el aprendizaje continuo. 👨‍💻
         </p>
       </div>
     </div>
