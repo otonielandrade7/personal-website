@@ -51,6 +51,7 @@ export default {};
   height: 100%;
   padding: 3rem 5rem 0;
 }
+
 .contact-info {
   display: grid;
   justify-content: center;
@@ -73,6 +74,7 @@ export default {};
 }
 .contact-item a {
   text-decoration: none;
+  color: var(--color-text);
 }
 .contact-item a:hover {
   text-decoration: underline;
