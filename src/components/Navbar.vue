@@ -9,7 +9,7 @@
           <a class="navbar-link" href="#home">Inicio</a>
         </li>
         <li class="navbar-item">
-          <a class="navbar-link" href="#skills">Experiencia</a>
+          <a class="navbar-link" href="#skills">Habilidades</a>
         </li>
         <li class="navbar-item">
           <a class="navbar-link" href="#contact">Contacto</a>
@@ -31,8 +31,11 @@ export default {
   padding: 0 2rem;
   align-items: center;
   height: 6.5rem;
-  background-color: var(--color-base);
+  background-color: rgba(255, 255, 255, 0.75);
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
 }
 .navbar > * {
   margin: 1rem 0;
