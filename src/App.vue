@@ -30,7 +30,7 @@ export default {
   --color-text-default: #3c484e;
   --color-text-secondary: #999;
   --color-border: #d8d7c7;
-  --color-bg: #f5f5f5;
+  --color-bg: #EFF3F5;
   --color-base: #fff;
 }
 * {
