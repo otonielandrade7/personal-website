@@ -9,11 +9,11 @@
         />
       </div>
       <div class="presentation-description">
-        <h1 class="gretting">Hola, soy Otoniel Andrade :)</h1>
+        <h1 class="gretting">Hola, soy Otoniel Andrade 👋</h1>
         <h2 class="gretting-tagline">Junior Javascript Developer</h2>
         <p>
-          Soy un joven apasionado por la tecnología y el aprendizaje continuo,
-          especializado en el desarrollo web con Javascript.
+          Soy un desarrollador JavaScript salvadoreño dedicado, con amor por la
+          tecnología y el aprendizaje continuo. 👨‍💻
         </p>
       </div>
     </div>
@@ -42,8 +42,7 @@ export default {};
   align-items: center;
   column-gap: 3rem;
   background-color: var(--color-base);
-    box-shadow: 1px 1px 20px rgba(0,0,0,0.1);
-
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
 }
 .presentation-container .gretting-tagline {
   color: var(--color-primary);
