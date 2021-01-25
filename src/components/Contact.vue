@@ -49,7 +49,7 @@ export default {};
 <style>
 #contact {
   height: 100%;
-  padding: 3rem 5rem 0;
+  padding: 3rem 5rem 3rem;
 }
 
 .contact-info {
@@ -79,4 +79,17 @@ export default {};
 .contact-item a:hover {
   text-decoration: underline;
 }
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+  .contact-info {
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-columns: minmax(1fr, 10rem);
+}
+}
+
 </style>

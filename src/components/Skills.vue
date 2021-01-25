@@ -57,7 +57,7 @@ export default {};
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  grid-auto-rows: 4rem;
+  grid-auto-rows: minmax(4rem, auto);
 }
 .skill-card {
   border-radius: 2px;
@@ -96,5 +96,32 @@ export default {};
 }
 .rest-card {
   border-left: 8px #c01c81 solid;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .skills-container {
+    width: 75%;
+    max-width: 75%;
+    margin: 5rem 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-container {
+    width: 80%;
+    max-width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills-container {
+    width: 90%;
+    max-width: 90%;
+  }
 }
 </style>

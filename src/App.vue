@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div class="warn">Responsive design soon.</div>
     <Navbar />
     <main>
       <Home />
@@ -51,6 +50,7 @@ html {
 }
 body {
   font-size: 2rem;
+  width: 100vw;
   max-width: 100vw;
   background-color: var(--color-bg);
 }
@@ -58,13 +58,13 @@ main > #skills {
   padding-top: 7rem;
 }
 footer {
-  height: 50vh;
+  max-height: auto;
   position: relative;
   bottom: 0;
 }
-  .warn {
-    display: none;
-  }
+.warn {
+  display: none;
+}
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {

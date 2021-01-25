@@ -27,6 +27,7 @@ export default {};
 
 <style>
 #home {
+  max-height:auto;
   height: calc(100vh - 6.5rem);
   display: flex;
   justify-content: center;
@@ -58,4 +59,31 @@ export default {};
   height: auto;
   border-radius: 100%;
 }
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .presentation-container{
+    height: auto;
+    max-width: 75%;
+    padding: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .presentation-container{
+    flex-direction: column;
+    height: auto;
+    max-width: 80%;
+    padding: 3rem;
+  }
+
+}
+@media (max-width: 480px) {
+  .presentation-container{
+    flex-direction: column;
+    height: auto;
+    max-width: 90%;
+    padding: 3rem;
+  }
+}
+
 </style>
