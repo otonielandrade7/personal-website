@@ -1,5 +1,6 @@
-# personal-website
 
+# My personal website
+Made with vue 💚
 ## Project setup
 ```
 npm install
