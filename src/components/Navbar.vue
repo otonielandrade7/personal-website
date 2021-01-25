@@ -6,6 +6,8 @@
         src="@/assets/logo.png"
         class="navbar-logo-img"
         alt="Logo de Otoniel Andrade"
+        width="50"
+        height="50"
       />
     </div>
     <div :class="{ hidden: mobileNavbar }" class="toggle-container">

@@ -6,7 +6,8 @@
           loading="lazy"
           class="presentation-photo"
           src="@/assets/profile-oto.jpg"
-          alt="Fotografía de Otoniel Andrade"
+          width="150"
+          height="150"
         />
       </div>
       <div class="presentation-description">
