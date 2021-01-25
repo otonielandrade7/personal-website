@@ -8,6 +8,7 @@
           src="@/assets/profile-oto.jpg"
           width="150"
           height="150"
+          alt="Fotografía de Otoniel Andrade"
         />
       </div>
       <div class="presentation-description">

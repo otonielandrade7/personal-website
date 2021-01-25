@@ -47,6 +47,7 @@ html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-size: 2rem;
