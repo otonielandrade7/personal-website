@@ -9,15 +9,25 @@
           <h3>Redes sociales</h3>
           <ul class="contact-list">
             <li class="contact-item">
-              <a href="https://www.linkedin.com/in/otonielandrade7/"
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/otonielandrade7/"
                 >LinkedIn
               </a>
             </li>
             <li class="contact-item">
-              <a href="https://twitter.com/otonielandrade7/">Twitter</a>
+              <a
+                class="contact-link"
+                href="https://twitter.com/otonielandrade7/"
+                >Twitter</a
+              >
             </li>
             <li class="contact-item">
-              <a href="https://instagram.com/otonielandrade7">Instagram</a>
+              <a
+                class="contact-link"
+                href="https://instagram.com/otonielandrade7"
+                >Instagram</a
+              >
             </li>
           </ul>
         </div>
@@ -25,15 +35,19 @@
           <h3>Otros</h3>
           <ul class="contact-list">
             <li class="contact-item">
-              <a href="mailto:otonielandrade7@gmail.com"
+              <a class="contact-link" href="mailto:otonielandrade7@gmail.com"
                 >otonielandrade7@gmail.com</a
               >
             </li>
             <li class="contact-item">
-              <a href="https://github.com/otonielandrade7">GitHub</a>
+              <a class="contact-link" href="https://github.com/otonielandrade7"
+                >GitHub</a
+              >
             </li>
             <li class="contact-item">
-              <a href="https://codepen.io/otonielandrade7">CodePen</a>
+              <a class="contact-link" href="https://codepen.io/otonielandrade7"
+                >CodePen</a
+              >
             </li>
           </ul>
         </div>
@@ -68,9 +82,13 @@ export default {};
 }
 .contact-list {
   list-style-type: none;
+  border-left: 2px black solid;
+  padding-left: 1rem;
 }
 .contact-item {
   margin: 1rem 0;
+  display: flex;
+  gap: 5px;
 }
 .contact-item a {
   text-decoration: none;
@@ -78,6 +96,9 @@ export default {};
 }
 .contact-item a:hover {
   text-decoration: underline;
+}
+.contact-media-image {
+  fill: yellowgreen;
 }
 @media (max-width: 1200px) {
 }
@@ -87,9 +108,8 @@ export default {};
 }
 @media (max-width: 480px) {
   .contact-info {
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-columns: minmax(1fr, 10rem);
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-columns: minmax(1fr, 10rem);
+  }
 }
-}
-
 </style>
