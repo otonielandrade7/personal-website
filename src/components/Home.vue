@@ -3,8 +3,11 @@
     <div class="presentation-container">
       <div class="presentation-photo-container">
         <img
+          loading="lazy"
           class="presentation-photo"
           src="@/assets/profile-oto.jpg"
+          width="150"
+          height="150"
           alt="Fotografía de Otoniel Andrade"
         />
       </div>
@@ -12,8 +15,8 @@
         <h1 class="gretting">Hola, soy Otoniel Andrade 👋</h1>
         <h2 class="gretting-tagline">Frontend web developer</h2>
         <p>
-          Soy un desarrollador web frontend salvadoreño dedicado, con amor por la
-          tecnología y el aprendizaje continuo. 👨‍💻
+          Soy un desarrollador web frontend salvadoreño dedicado, con amor por
+          la tecnología y el aprendizaje continuo. 👨‍💻
         </p>
       </div>
     </div>
@@ -26,6 +29,7 @@ export default {};
 
 <style>
 #home {
+  max-height:auto;
   height: calc(100vh - 6.5rem);
   display: flex;
   justify-content: center;
@@ -57,4 +61,31 @@ export default {};
   height: auto;
   border-radius: 100%;
 }
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .presentation-container{
+    height: auto;
+    max-width: 75%;
+    padding: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .presentation-container{
+    flex-direction: column;
+    height: auto;
+    max-width: 80%;
+    padding: 3rem;
+  }
+
+}
+@media (max-width: 480px) {
+  .presentation-container{
+    flex-direction: column;
+    height: auto;
+    max-width: 90%;
+    padding: 3rem;
+  }
+}
+
 </style>

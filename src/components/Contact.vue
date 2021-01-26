@@ -2,7 +2,7 @@
   <div id="contact">
     <div class="contact-container">
       <div class="contact-title">
-        <h2>Contactame</h2>
+        <h2>Contáctame</h2>
       </div>
       <div class="contact-info">
         <div class="contact-media-card">
@@ -49,8 +49,9 @@ export default {};
 <style>
 #contact {
   height: 100%;
-  padding: 3rem 5rem 0;
+  padding: 3rem 5rem 3rem;
 }
+
 .contact-info {
   display: grid;
   justify-content: center;
@@ -73,8 +74,22 @@ export default {};
 }
 .contact-item a {
   text-decoration: none;
+  color: var(--color-text);
 }
 .contact-item a:hover {
   text-decoration: underline;
 }
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+  .contact-info {
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-columns: minmax(1fr, 10rem);
+}
+}
+
 </style>
