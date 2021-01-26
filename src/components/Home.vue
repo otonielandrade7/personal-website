@@ -29,12 +29,13 @@ export default {};
 
 <style>
 #home {
-  max-height:auto;
+  max-height: auto;
   height: calc(100vh - 6.5rem);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .presentation-container {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-default);
@@ -64,28 +65,29 @@ export default {};
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
-  .presentation-container{
+  .presentation-container {
     height: auto;
     max-width: 75%;
     padding: 3rem;
   }
 }
 @media (max-width: 768px) {
-  .presentation-container{
+  .presentation-container {
     flex-direction: column;
     height: auto;
     max-width: 80%;
     padding: 3rem;
   }
-
 }
 @media (max-width: 480px) {
-  .presentation-container{
+  .presentation-container {
     flex-direction: column;
     height: auto;
     max-width: 90%;
     padding: 3rem;
   }
+  .presentation-description h2 {
+    font-size: 2.5rem;
+  }
 }
-
 </style>
