@@ -2,7 +2,7 @@
   <div id="contact">
     <div class="contact-container">
       <div class="contact-title">
-        <h2>Contactame</h2>
+        <h2>Contáctame</h2>
       </div>
       <div class="contact-info">
         <div class="contact-media-card">
