@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div class="toggle-darkmode-container"></div>
     <Navbar />
     <main>
       <Home />
@@ -30,7 +29,7 @@ export default {
 </script>
 
 <style>
-:root {
+.light {
   --border-radius-default: 4px;
   --color-primary: #367eff;
   --color-text-default: #3c484e;
@@ -64,16 +63,7 @@ footer {
   position: relative;
   bottom: 0;
 }
-.toggle-darkmode-container{
-  position: fixed;
-  right: 0;
-  z-index: 100;
-  top: calc(100vh - 75%);
-  width: 30px;
-  height: 30px;
-  background-color: #367eff;
 
-}
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {

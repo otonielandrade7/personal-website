@@ -54,6 +54,23 @@
         <li class="navbar-item">
           <a class="navbar-link" href="#contact">Contacto</a>
         </li>
+        <li class="navbar-item">
+          <div>
+            <input
+              v-model="darkmodeTheme"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+            />
+            <label
+              v-on:click="xd()"
+              class="darkmode-toggle"
+              for="checkbox"
+            >
+            </label>
+            {{ darkmodeTheme }}
+          </div>
+        </li>
       </ul>
     </nav>
     <div class="white-div"></div>
@@ -66,14 +83,41 @@ export default {
   data() {
     return {
       mobileNavbar: false,
+      theme: localStorage.getItem("theme"),
+      darkmodeTheme: false,
+      myDocument: document.getElementById("app"),
     };
   },
   methods: {
     toggleNavbar: function () {
       this.mobileNavbar = !this.mobileNavbar;
     },
+    xd(){
+      this.darkmodeTheme=!this.darkmodeTheme;
+      this.toggleDarkmode();
+    },
+    toggleDarkmode: function () {
+      console.log("🚀 ~ this.darkmodeTheme", this.darkmodeTheme);
+      this.darkmodeTheme
+        ? localStorage.setItem("theme", "dark")
+        : localStorage.setItem("theme", "light");
+    },
+    checkTheme: function () {
+      if (this.theme === null) {
+        localStorage.setItem("theme", "light");
+      }
+      if (this.theme === "light") {
+        console.log("luz!");
+        this.darkmodeTheme = false;
+      } else if (this.theme === "dark") {
+        console.log("tinieblas!");
+        this.darkmodeTheme = true;
+      }
+      this.toggleDarkmode();
+    },
   },
   created() {
+    this.checkTheme();
     document.body.addEventListener(
       "click",
       () => {
@@ -132,6 +176,34 @@ export default {
   border: none;
   background-color: transparent;
   text-decoration: underline solid 1px black;
+}
+#checkbox {
+  display: none;
+}
+.darkmode-toggle {
+  display: flex;
+  width: 5rem;
+  padding: 0.3rem;
+  border-radius: 100px;
+  cursor: pointer;
+  justify-content: flex-start;
+  background-color: var(--color-bg);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
+  align-items: center;
+}
+.darkmode-toggle:before {
+  background-color: var(--color-primary);
+  content: "";
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  transform: scale(1.8);
+  transition: all 0.2s;
+}
+#checkbox:checked ~ .darkmode-toggle:before {
+  transform: translateX(2.6rem) scale(1.8);
+  align-self: center;
 }
 .navbar-nav {
   order: 2;
