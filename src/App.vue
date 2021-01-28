@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style>
-.light {
+.light-mode {
   --border-radius-default: 4px;
   --color-primary: #367eff;
   --color-text-default: #3c484e;
@@ -37,7 +37,24 @@ export default {
   --color-border: #d8d7c7;
   --color-bg: #eff3f5;
   --color-base: #fff;
+  --glass: rgba(255, 255, 255, 0.75);
+  --toggle-bg: #d8d7c7;
 }
+.dark-mode {
+  --color-primary: #2b70f1;
+  --color-base: #212e36;
+  --color-base-opacity: #383737;
+  --color-secondary: #eed625;
+  --color-border: #1f2930;
+  --color-bg: #192229;
+  --color-text-default: rgb(239, 243, 245);
+  --color-text-secondary: #eee;
+  --color-white: #fff;
+  --glass: rgba(33, 46, 54, 0.75);
+  --toggle-bg: #094977;
+}
+/* @media (prefers-color-scheme: dark) {
+} */
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +71,7 @@ body {
   width: 100vw;
   max-width: 100vw;
   background-color: var(--color-bg);
+  color: var(--color-text-default);
 }
 main > #skills {
   padding-top: 7rem;

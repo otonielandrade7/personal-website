@@ -54,22 +54,15 @@
         <li class="navbar-item">
           <a class="navbar-link" href="#contact">Contacto</a>
         </li>
-        <li class="navbar-item">
-          <div>
-            <input
-              v-model="darkmodeTheme"
-              type="checkbox"
-              name="checkbox"
-              id="checkbox"
-            />
-            <label
-              v-on:click="xd()"
-              class="darkmode-toggle"
-              for="checkbox"
-            >
-            </label>
-            {{ darkmodeTheme }}
-          </div>
+        <li class="navbar-item darkmode-toggle-container">
+          <input
+            v-model="darkmodeTheme"
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            v-on:change="themeToggler()"
+          />
+          <label class="darkmode-toggle" for="checkbox"> </label>
         </li>
       </ul>
     </nav>
@@ -92,32 +85,30 @@ export default {
     toggleNavbar: function () {
       this.mobileNavbar = !this.mobileNavbar;
     },
-    xd(){
-      this.darkmodeTheme=!this.darkmodeTheme;
-      this.toggleDarkmode();
-    },
-    toggleDarkmode: function () {
-      console.log("🚀 ~ this.darkmodeTheme", this.darkmodeTheme);
-      this.darkmodeTheme
-        ? localStorage.setItem("theme", "dark")
-        : localStorage.setItem("theme", "light");
-    },
-    checkTheme: function () {
-      if (this.theme === null) {
-        localStorage.setItem("theme", "light");
-      }
-      if (this.theme === "light") {
-        console.log("luz!");
-        this.darkmodeTheme = false;
-      } else if (this.theme === "dark") {
-        console.log("tinieblas!");
+    check() {
+      console.log(this.theme);
+      if (this.theme === "dark") {
         this.darkmodeTheme = true;
       }
-      this.toggleDarkmode();
+      if (this.theme === "light" || this.theme === null) {
+        this.darkmodeTheme = false;
+      }
+      this.themeToggler();
+    },
+    themeToggler() {
+      if (this.darkmodeTheme) {
+        document.querySelector("body").classList.remove("light-mode");
+        document.querySelector("body").classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+      } else if (!this.darkmodeTheme) {
+        document.querySelector("body").classList.remove("dark-mode");
+        document.querySelector("body").classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+      }
     },
   },
   created() {
-    this.checkTheme();
+    this.check();
     document.body.addEventListener(
       "click",
       () => {
@@ -137,7 +128,7 @@ export default {
   padding: 0 2rem;
   align-items: center;
   height: 6.5rem;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--glass);
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -156,6 +147,9 @@ export default {
   display: none;
   order: 3;
   width: 4.5rem;
+}
+.toggle-container svg path {
+  fill: var(--color-text-default);
 }
 .white-div {
   order: 4;
@@ -180,14 +174,20 @@ export default {
 #checkbox {
   display: none;
 }
+.navbar-list .navbar-item.darkmode-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 auto;
+}
 .darkmode-toggle {
   display: flex;
   width: 5rem;
   padding: 0.3rem;
+  margin: 0.5rem;
   border-radius: 100px;
   cursor: pointer;
   justify-content: flex-start;
-  background-color: var(--color-bg);
+  background-color: var(--toggle-bg);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
   align-items: center;
 }
@@ -208,10 +208,12 @@ export default {
 .navbar-nav {
   order: 2;
   margin-left: 2rem;
+  width: 100%;
 }
 .navbar-list {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 .navbar-list .navbar-item {
