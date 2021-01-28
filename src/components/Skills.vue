@@ -111,14 +111,24 @@ export default {};
     max-width: 75%;
     margin: 5rem 0 2rem;
   }
+  .first-container {
+    width: 75%;
+    max-width: 75%;
+  }
 }
 @media (max-width: 768px) {
+  .first-container {
+    width: 80%;
+    max-width: 80%;
+    margin: 2rem 0 0 0;
+  }
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .skills-container {
     width: 80%;
     max-width: 80%;
+    margin: 4rem 0 2rem;
   }
 }
 @media (max-width: 480px) {
@@ -128,6 +138,12 @@ export default {};
   .skills-container {
     width: 90%;
     max-width: 90%;
+    margin: 3rem 0 2rem;
+  }
+    .first-container {
+    width: 90%;
+    max-width: 90%;
+    margin: 2rem 0 0 0;
   }
 }
 </style>
