@@ -53,8 +53,7 @@ export default {
   --glass: rgba(33, 46, 54, 0.75);
   --toggle-bg: #094977;
 }
-/* @media (prefers-color-scheme: dark) {
-} */
+
 * {
   margin: 0;
   padding: 0;
