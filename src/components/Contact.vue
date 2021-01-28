@@ -2,11 +2,11 @@
   <div id="contact">
     <div class="contact-container">
       <div class="contact-title">
-        <h2>Contáctame</h2>
+        <h1>Contáctame</h1>
       </div>
       <div class="contact-info">
         <div class="contact-media-card">
-          <h3>Redes sociales</h3>
+          <h2>Redes sociales</h2>
           <ul class="contact-list">
             <li class="contact-item">
               <a
@@ -32,7 +32,7 @@
           </ul>
         </div>
         <div class="contact-others-card">
-          <h3>Otros</h3>
+          <h2>Otros</h2>
           <ul class="contact-list">
             <li class="contact-item">
               <a class="contact-link" href="mailto:otonielandrade7@gmail.com"
@@ -65,7 +65,9 @@ export default {};
   height: 100%;
   padding: 3rem 5rem 3rem;
 }
-
+.contact-container{
+  width: auto;
+}
 .contact-info {
   display: grid;
   justify-content: center;
@@ -105,6 +107,7 @@ export default {};
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
+
 }
 @media (max-width: 480px) {
   .contact-info {
