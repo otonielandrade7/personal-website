@@ -1,7 +1,10 @@
 <template>
   <div id="skills">
-    <div class="skills-container first-container">
-      <div><p>Tengo experiencia trabajando con:</p></div>
+    <div class="first-container">
+      <h1>Habilidades:</h1>
+    </div>
+    <div class="skills-container">
+      <div><h2>Tengo experiencia trabajando con:</h2></div>
       <div class="skills-grid">
         <div class="skill-card html-card"><p>HTML</p></div>
         <div class="skill-card css-card"><p>CSS</p></div>
@@ -14,7 +17,7 @@
       </div>
     </div>
     <div class="skills-container">
-      <div><p>Soft skills:</p></div>
+      <div><h2>Soft skills:</h2></div>
       <div class="skills-grid">
         <div class="skill-card"><p>Puntualidad</p></div>
         <div class="skill-card"><p>Empatía</p></div>
@@ -41,7 +44,9 @@ export default {};
   padding: 0 0 10rem 0;
 }
 .first-container {
-  margin: 10rem 0 3rem;
+  margin: 4rem 0 3rem;
+  width: 65%;
+  max-width: 65%;
 }
 .skills-container {
   padding: 3.5rem 3rem;
@@ -51,6 +56,7 @@ export default {};
   border-radius: var(--border-radius-default);
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
   background-color: var(--color-base);
+  margin: 2rem 0;
 }
 .skills-grid {
   margin: 2.5rem 0;
