@@ -53,6 +53,9 @@
         </div>
       </div>
     </div>
+    <div class="message">
+      <small>Hecho por <a href="#home">Otoniel Andrade</a> con <a href="#skills">Vue.js 💚</a></small>
+    </div>
   </div>
 </template>
 
@@ -61,11 +64,26 @@ export default {};
 </script>
 
 <style>
+.message {
+  margin: 3rem 0 0 0;
+  display: flex;
+}
+.message small {
+  margin: 0 auto;
+}
+.message small a {
+  color: var(--color-text-default);
+  text-decoration: none;
+}
+.message small a:hover {
+  color: var(--color-text-default);
+  text-decoration: underline;
+}
 #contact {
   height: 100%;
   padding: 3rem 5rem 3rem;
 }
-.contact-container{
+.contact-container {
   width: auto;
 }
 .contact-info {
@@ -84,7 +102,7 @@ export default {};
 }
 .contact-list {
   list-style-type: none;
-  border-left: 2px black solid;
+  border-left: 2px var(--color-primary) solid;
   padding-left: 1rem;
 }
 .contact-item {
@@ -107,7 +125,6 @@ export default {};
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
-
 }
 @media (max-width: 480px) {
   .contact-info {
