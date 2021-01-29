@@ -65,6 +65,12 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+h1 {
+  font-weight: 600;
+}
+h2 {
+  font-weight: normal;
+}
 body {
   font-size: 2rem;
   width: 100vw;
