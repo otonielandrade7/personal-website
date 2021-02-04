@@ -34,11 +34,7 @@
         <div class="contact-others-card">
           <h2>Otros</h2>
           <ul class="contact-list">
-            <li class="contact-item">
-              <a class="contact-link" href="mailto:otonielandrade7@gmail.com"
-                >otonielandrade7@gmail.com</a
-              >
-            </li>
+        
             <li class="contact-item">
               <a class="contact-link" href="https://github.com/otonielandrade7"
                 >GitHub</a
