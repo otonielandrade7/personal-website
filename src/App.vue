@@ -23,15 +23,7 @@ export default {
     Home,
     Contact,
     Skills,
-  },
-  data() {
-    return {
-      xd: process.env.EASTER_EGG,
-    };
-  },
-  created() {
-    console.log(this.xd);
-  },
+  }
 };
 </script>
 

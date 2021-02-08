@@ -86,7 +86,6 @@ export default {
       this.mobileNavbar = !this.mobileNavbar;
     },
     check() {
-      console.log(this.theme);
       if (this.theme === "dark") {
         this.darkmodeTheme = true;
       }
@@ -108,7 +107,6 @@ export default {
     },
   },
   created() {
-    
     this.check();
     document.body.addEventListener(
       "click",
