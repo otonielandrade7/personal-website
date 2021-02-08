@@ -16,7 +16,6 @@ import Navbar from "./components/Navbar.vue";
 import Home from "./components/Home.vue";
 import Skills from "./components/Skills.vue";
 import Contact from "./components/Contact.vue";
-
 export default {
   name: "App",
   components: {
@@ -24,6 +23,14 @@ export default {
     Home,
     Contact,
     Skills,
+  },
+  data() {
+    return {
+      xd: process.env.EASTER_EGG,
+    };
+  },
+  created() {
+    console.log(this.xd);
   },
 };
 </script>
