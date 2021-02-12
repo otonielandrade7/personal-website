@@ -10,6 +10,7 @@
           <ul class="contact-list">
             <li class="contact-item">
               <a
+                target="_blank"
                 class="contact-link"
                 href="https://www.linkedin.com/in/otonielandrade7/"
                 >LinkedIn
@@ -17,6 +18,7 @@
             </li>
             <li class="contact-item">
               <a
+                target="_blank"
                 class="contact-link"
                 href="https://twitter.com/otonielandrade7/"
                 >Twitter</a
@@ -24,6 +26,7 @@
             </li>
             <li class="contact-item">
               <a
+                target="_blank"
                 class="contact-link"
                 href="https://instagram.com/otonielandrade7"
                 >Instagram</a
@@ -42,12 +45,18 @@
               >
             </li>
             <li class="contact-item">
-              <a class="contact-link" href="https://github.com/otonielandrade7"
+              <a
+                target="_blank"
+                class="contact-link"
+                href="https://github.com/otonielandrade7"
                 >GitHub</a
               >
             </li>
             <li class="contact-item">
-              <a class="contact-link" href="https://codepen.io/otonielandrade7"
+              <a
+                target="_blank"
+                class="contact-link"
+                href="https://codepen.io/otonielandrade7"
                 >CodePen</a
               >
             </li>
