@@ -34,7 +34,13 @@
         <div class="contact-others-card">
           <h2>Otros</h2>
           <ul class="contact-list">
-        
+            <li class="contact-item">
+              <a
+                class="contact-link mail"
+                href="mailto:otonielandrade7@gmail.com"
+                >Correo electrónico</a
+              >
+            </li>
             <li class="contact-item">
               <a class="contact-link" href="https://github.com/otonielandrade7"
                 >GitHub</a
@@ -50,7 +56,10 @@
       </div>
     </div>
     <div class="message">
-      <small>Hecho por <a href="#home">Otoniel Andrade</a> con <a href="#skills">Vue.js 💚</a></small>
+      <small
+        >Hecho por <a href="#home">Otoniel Andrade</a> con
+        <a href="#skills">Vue.js 💚</a></small
+      >
     </div>
   </div>
 </template>
@@ -92,6 +101,7 @@ export default {};
 .contact-title {
   margin: 0 0 2rem 0;
 }
+
 .social-media-card,
 .social-others-card {
   width: 75%;
