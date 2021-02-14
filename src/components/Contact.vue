@@ -11,6 +11,7 @@
             <li class="contact-item">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 class="contact-link"
                 href="https://www.linkedin.com/in/otonielandrade7/"
                 >LinkedIn
@@ -19,6 +20,7 @@
             <li class="contact-item">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 class="contact-link"
                 href="https://twitter.com/otonielandrade7/"
                 >Twitter</a
@@ -27,6 +29,7 @@
             <li class="contact-item">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 class="contact-link"
                 href="https://instagram.com/otonielandrade7"
                 >Instagram</a
@@ -47,6 +50,7 @@
             <li class="contact-item">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 class="contact-link"
                 href="https://github.com/otonielandrade7"
                 >GitHub</a
@@ -55,6 +59,7 @@
             <li class="contact-item">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 class="contact-link"
                 href="https://codepen.io/otonielandrade7"
                 >CodePen</a
