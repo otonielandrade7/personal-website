@@ -5,7 +5,7 @@
         <img
           loading="lazy"
           class="presentation-photo"
-          src="@/assets/profile-oto.jpg"
+          src="@/assets/profile-oto.png"
           width="150"
           height="150"
           alt="Fotografía de Otoniel Andrade"
